@@ -1,0 +1,44 @@
+<ion-view view-title="Registration">
+  <ion-content>
+    <h2>Welcome to Registration</h2>
+      <h2> <span style="color:red">{{msg}}</span> </h2>
+    <p>
+    <div class="list">
+   <label class="item item-input item-stacked-label">
+   <span class="input-label">User ID*</span>
+   <input type="text" ng-model="loginform.uid" placeholder="User ID">
+   </label>
+
+   <label class="item item-input item-stacked-label">
+   <span class="input-label">Password*</span>
+   <input type="password" ng-model="loginform.pass" placeholder="Password">
+   </label>
+        
+        <label class="item item-input item-stacked-label">
+   <span class="input-label">Nicename*</span>
+   <input type="text" ng-model="loginform.user_nicename" placeholder="Password">
+   </label>
+        
+        <label class="item item-input item-stacked-label">
+   <span class="input-label">Email*</span>
+   <input type="email" ng-model="loginform.user_email" placeholder="Password">
+   </label>
+        
+        <label class="item item-input item-stacked-label">
+   <span class="input-label">Url</span>
+   <input type="text" ng-model="loginform.user_url" placeholder="Password">
+   </label>
+        
+        <label class="item item-input item-stacked-label">
+   <span class="input-label">Display Name*</span>
+   <input type="text" ng-model="loginform.display_name" placeholder="Password">
+   </label>
+        
+        
+        
+        
+         <button class="button" ng-click="save()">Submit</button>
+</div>
+    </p>
+  </ion-content>
+</ion-view>

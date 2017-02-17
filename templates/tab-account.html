@@ -1,0 +1,18 @@
+<ion-view view-title="Registred Members">
+  <ion-content>
+      
+      <h2>Registred Members</h2>
+      <h2> <span style="color:red">{{msg}}</span> </h2>
+    <p ng-init="getall()">
+        <div  ng-repeat="user in users">
+    <div class="list">
+   <label class="item item-input item-stacked-label">
+   <span class="input-label" style="color:blue;">{{user.uid}}</span>
+   
+   </label>
+      </div>
+        </div>
+        
+      </p>
+  </ion-content>
+</ion-view>
